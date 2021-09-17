@@ -25,5 +25,5 @@ You can try the basic CRUD operations. Beyond them there are special endpoints, 
 - `/skill/getOptional/dog/{dog_id}/trick/{trick_id}`: the skill by dog id and trick id
 - `/skill/name/{trick_name}/dog/{dog_id}`: the skill by dog id and trick name
 
-If you run the application, you can access the database at <http://localhost:8080/h2-console> with url *jdbc:h2:~/robodogschool*,<br>
+If you run the application, you can access the database at <http://localhost:8080/h2-console> with url *jdbc:h2:~/robodogschool*, 
 or try it on Swagger: <http://localhost:8080/swagger-ui.html>
