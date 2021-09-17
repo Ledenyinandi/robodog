@@ -5,6 +5,7 @@ import nandor.ledenyi.robodog.dao.mapper.PedigreeMapper;
 import nandor.ledenyi.robodog.model.Breed;
 import nandor.ledenyi.robodog.model.Dog;
 import nandor.ledenyi.robodog.model.Pedigree;
+import nandor.ledenyi.robodog.model.dto.PuppyDto;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
@@ -96,7 +97,7 @@ public class PedigreeDaoJdbc implements PedigreeDao {
     }
 
     @Override
-    public Dog getPuppy(PuppyDTO puppyDTO) {
+    public Dog getPuppy(PuppyDto puppyDTO) {
         Dog dog = new Dog(breedForPuppy(puppyDTO.getMomId(), puppyDTO.getMomId()), puppyDTO.getName(), 0);
         dogDao.addDog(dog);
         return dog;

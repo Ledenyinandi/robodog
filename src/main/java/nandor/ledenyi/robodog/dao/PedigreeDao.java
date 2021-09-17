@@ -2,6 +2,8 @@ package nandor.ledenyi.robodog.dao;
 
 import nandor.ledenyi.robodog.model.Dog;
 import nandor.ledenyi.robodog.model.Pedigree;
+import nandor.ledenyi.robodog.model.dto.PuppyDto;
+
 import java.util.List;
 
 public interface PedigreeDao {
@@ -22,7 +24,7 @@ public interface PedigreeDao {
 
     void addPedigreeForDog(Pedigree pedigree);
 
-    Dog getPuppy(PuppyDTO puppyDTO);
+    Dog getPuppy(PuppyDto puppyDto);
 
     Dog getMom(long id);
 
